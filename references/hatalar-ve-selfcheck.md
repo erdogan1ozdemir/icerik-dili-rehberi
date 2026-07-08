@@ -24,6 +24,10 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 18. **Hal eki - edilgen çatı uyumsuzluğu:** "kodları kaldırılabilir", "kaymalar yaşadığımız alan". → "kodlar kaldırılabilir", "kaymaları yaşadığımız alan".
 19. **Mantık ters dönmesi:** "kaymalardan dolayı site açılış hızı artmaktadır" (azalma kastedilmiş). → Kopyala-yapıştır sonrası anlam kontrolü.
 20. **Kaynaksız çarpıcı oran:** "%36 daha fazla AI atıfı", "2.5x referans" gibi iddiaların "gözlemleniyor" ile geçiştirilmesi. → Kaynak verilir ya da oran çıkarılır.
+21. **Konuşma dili başlık:** ifade başlığı "-iyor" ile biter ("Citation'lar hangi kaynaklara gidiyor"). → Soru başlığıysa "?" eklenir (soru başlığı serbest); değilse nominal yapıya çevrilir ("Citation kaynak dağılımı").
+22. **Coined kelime / ham İngilizce etiket:** grafik-tablo etiketinde "Duallik", "weak topic clusters". → Türkçeleştirilir veya yerleşik terime çevrilir; etiketler gövde metniyle aynı denetime tabidir.
+23. **Keskin analitik betimleme:** "ters profildedir", "açık ara önde", "en zayıf halka". → Nötr formal karşılık ("tersine dönen örüntü", "belirgin biçimde önde", "en az işlenen başlık").
+24. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
 
 ---
 
@@ -49,6 +53,8 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] Gözlem gereksiz yumuşatılmış mı? (ölçülmüş etki "-mektedir/-maktadır" ile net mi; çifte yumuşatma var mı?)
 - [ ] Register tutarlı mı? (tek kip, tek şahıs; üç kip reyonu karışmış mı?)
 - [ ] Rakip aşağılayıcı dil var mı? → Marka fırsatına çevir.
+- [ ] Grafik/tablo etiketleri, cluster/eksen adları da dil denetiminden geçti mi? (coined "Duallik", ham İngilizce "weak topic clusters" yok mu?)
+- [ ] İfade başlıkları "-iyor" ile bitmiyor mu? (soru başlığıysa "?" var mı?)
 
 ### 2.3. Rakam / kaynak
 - [ ] Yüzde formatı tek mi? (+%X, ondalık nokta, tabloda da aynı)

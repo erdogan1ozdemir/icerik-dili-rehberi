@@ -60,7 +60,7 @@ Aynı standart, işin türüne göre iki rejimde uygulanır. Bölüm yazmadan ö
 
 13. **Uydurma / spekülasyon yok.** Bilgi yoksa boş bırakılır veya "-" yazılır; "eklenebilir/gelecek" gibi spekülasyon yapılmaz. Her önemli sayı bir kaynağa bağlanır. Varsayım rakamı verilmez; gerçek veri yoksa metrik çıkarılır. (Veri eksikliği politikasının tamamı: `references/kanal-ozel-kurallar.md` Bölüm 10.)
 
-14. **Çiğ / afili / zorlama kelime yok.** "Doğrulanmış fırsat, çekirdek, kanıt, mercek, anılmak, panorama, havlu paradoksu" kullanılmaz. "Kanıt" → "örnek / ekran görüntüsü"; "mercek" → "perspektif".
+14. **Çiğ / afili / zorlama kelime yok.** "Doğrulanmış fırsat, çekirdek, kanıt, mercek, anılmak, panorama, havlu paradoksu" kullanılmaz. "Kanıt" → "örnek / ekran görüntüsü / dayanak"; "mercek" → "perspektif".
 
 **Kapak kuralı:** Doküman, HTML rapor ve Excel çıktıları kapak süsü, dekoratif ayraç çizgisi veya "Hazırlayan / Prepared by" bölümü içermez; doğrudan içerikle başlar. Sunumlarda (PPTX) ise kapak slaytı + "SUNUM AKIŞI" ajandası ev standardıdır ve korunur.
 

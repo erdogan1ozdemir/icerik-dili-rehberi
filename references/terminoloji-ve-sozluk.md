@@ -71,6 +71,7 @@ Karmaşık kavramlar somut senaryoyla açılır: "Agentic commerce nedir? Kullan
 | %X artış olacak | %X artış fırsatı sunabilir |
 | hemen, acilen | önceliklendirilebilir |
 | 1. sıra çok kolay | 1. sıra hedeflenebilir |
+| garanti vermez, garantisi yok (deyim) | beraberinde getirmez / güvence sağlamaz |
 
 ### 2.2. Olumsuz / keskin kelime
 
@@ -82,6 +83,8 @@ Karmaşık kavramlar somut senaryoyla açılır: "Agentic commerce nedir? Kullan
 | hata, sorun (yargı olarak) | ele alınabilecek nokta / bulgu / tespit |
 | ciddi | dikkate değer |
 | zayıf | belirli alanlarda büyüme potansiyeli taşıyan |
+| en zayıf halka | en az işlenen / en sınırlı kalan başlık |
+| ters profil, ters profildedir | tersine dönen örüntü / tam tersi profil |
 | yapmıyor, eksik | henüz değerlendirilmemiş / katalogda henüz yer almıyor |
 
 ### 2.3. Pazarlama jargonu / abartı
@@ -91,6 +94,7 @@ Karmaşık kavramlar somut senaryoyla açılır: "Agentic commerce nedir? Kullan
 | patlama (yaşıyor) | yüksek artış, belirgin büyüme |
 | büyüme motoru | büyüme oranı / büyüme kanalı |
 | dramatik | belirgin, kayda değer |
+| açık ara (önde) | belirgin biçimde / net biçimde (önde) |
 | kat kat, X katı | somut oran (~%30 daha yüksek) veya "Nx" çarpan (3.6x) |
 | puan iyileşme | pozisyon iyileşmesi / sıralama iyileşmesi |
 | para tuzağı | ek süre maliyeti (nötr betimleme) |
@@ -115,6 +119,12 @@ Not: Gözlemlenen/ölçülmüş etkiler "-mektedir / -maktadır" ile net bildiri
 - "Analizi yeniden çerçeveledik" → doğrudan olgu: "Ahrefs'te 5G %2.3 görünüyordu; gerçekte en büyük paid segment olduğu tespit edildi."
 - "Tüm durumlar tek tek doğrulandı" → "mevcut durum kontrol edilerek ilerlendi."
 - "Sentez / doğrulandı" ibareleri → kaldırılır; varsa kaynak/referans linki verilir.
+
+### 2.6. Çiğ / coined kelime ve etiket dili
+
+- Uydurma / coined kelime kullanılmaz: "Duallik" → "İkili sorgu"; "havlu paradoksu" → nötr başlık.
+- Grafik/tablo etiketleri, eksen adları, cluster & segment adları da gövde metniyle aynı dil denetimine tabidir; "küçük etiket" diye atlanmaz.
+- Sabit sektör terimi olmayan ham İngilizce ifadeler Türkçeleştirilir: "weak topic clusters" → "düşük görünürlüklü cluster'lar". Yalnızca yerleşik terimler (SOV, CTR, citation, mention, cluster) İngilizce kalır.
 
 ---
 
