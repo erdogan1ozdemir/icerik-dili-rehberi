@@ -73,6 +73,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] Her insight ➔ ile mi başlıyor? Sembol seti standart mı?
 - [ ] Artış yeşil, düşüş kırmızı, anahtar terim coral, rakamlar bold mu?
 - [ ] HTML'de teknik terimler .term span'lı mı? Glossary dışına span verilmiş mi?
+- [ ] HTML raporda kart/blok kenarına renkli dekoratif şerit (border-left/top coral vb.) var mı? → Kart ayrımı ince kenarlık veya sade arka plan tonuyla yapılır (bkz. HTML rapor kanal kuralı: parantez/ayraç biçimli süs öğesi yasak).
 - [ ] Başlıklar nötr, anlaşılır, iddiasız mı?
 - [ ] Otomasyon aracı adı veya iç kısıt ifadesi ("ölçülemiyor") sızmış mı? (İç kısıt varsa sunacak kişiye chat'ten iletildi mi?)
 - [ ] Konuşmacı notları, iç durum etiketleri (Blocked vb.) ve "(Shared)" link adları temizlendi mi?
