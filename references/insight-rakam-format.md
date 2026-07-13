@@ -50,7 +50,7 @@ Aksiyon önerileri direktif değil, öneri kipiyle iletilir. **Hedging hiyerarş
 |---|---|---|
 | Düşüş / negatif | Kırmızı (#D32F2F) | `-%37 düşerken`, `-%2.6 YoY` |
 | Artış / pozitif | Yeşil (#2E7D32) | `%8 artmıştır`, `+%8.1`, `+1.8 iyileşme ↑` |
-| Anahtar terim / dikkat | Coral (#F4845F) | `en yüksek görüntülenme`, `en stabil kategori` |
+| Anahtar terim / dikkat | Coral (#FF7B52) | `en yüksek görüntülenme`, `en stabil kategori` |
 | Rakamlar / metrik adları | Bold | `595.4K tıklama`, `%4.3 seviyesinde` |
 
 ### 2.3. Örnek insight cümleleri

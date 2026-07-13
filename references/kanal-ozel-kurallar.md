@@ -195,3 +195,18 @@ Referans: vitraglobal.com Geçiş Sonrası Audit yapısı.
 - **Karar müşteriye bırakılan koşullu kalıp** kullanılabilir: "Önce sayfaların açık kalıp kalmayacağı incelenmeli. - Kapatılacaksa 301 yönlendirmeleri hazırlanacak. - Açık kalacaklar için aksiyon alınmayacak."
 - Detay sütunundaki açıklamalarda "İlgili bilgi veya element eklenmeliydi" tarzı gereksiz/geriye dönük yorumlar yazılmaz; ya düzgün açıklama verilir ya boş bırakılır.
 - Teknik hijyen: status code'lar tam sayı (404, "404.0" değil), boolean yerine Türkçe etiket, sütun başlıklarında konuşma dili ("açık mı kalacak?") yerine nötr ad ("Açık Kalma Kararı"), benzer içerikli mükerrer sheet açılmaz.
+
+### 7.3. Excel renk ve biçim standardı (Inbound Design System)
+
+Kaynak: Inbound Design System (`colors_and_type.css` + README). Bu kurallar Excel'e özeldir ve web/deck tablo bileşeninden (teal başlık + dolgulu wash hücre) bilinçli olarak daha sade tutulur: Excel çıktıları bir çalışma aracı gibi okunur, pazarlama yüzeyi gibi değil.
+
+- **Başlık satırı:** dolgu Shadowed Charcoal `#434343`, yazı beyaz, kalın, yatay + dikey ortalanmış. Bu Excel'e özel, ayrı bir renktir; web/deck'teki teal (`#10332F`) veya coral (`#FF7B52`) Excel başlığına taşınmaz.
+- **Yazı tipi:** Excel'de Bricolage Grotesque/Outfit güvenilir şekilde yüklü olmadığından, sistemin belgelenmiş yedek fontu Calibri kullanılır. Gövde metni rengi ink teal `#10332F`'dir (salt siyah değil).
+- **Dikey hizalama:** dolu her hücre (başlık + gövde) dikeyde ortalanır; asla üste veya alta yapışık bırakılmaz. Etiket/URL sütunları yatayda sola, sayısal/metrik sütunlar ortaya hizalanır.
+- **Değişim (delta) sütunları:** yalnızca yazı rengi, arka plan dolgusu yok. Pozitif değer kalın yeşil `#2E7D32`; negatif değer kalın kırmızı `#D32F2F`. Web tablosundaki dolgulu ("wash") arka plan Excel'e taşınmaz; yüzlerce/binlerce satırlık bir sütunda çok ağır durur.
+- **Her şeyi renklendirme.** Conditional formatting yalnızca değişim/delta anlamı taşıyan sütun(lar)a uygulanır. Ham büyüklük sütunları (trafik hacmi, sayfa sayısı, keyword sayısı, pay %) özel bir talep olmadıkça düz, biçimsiz sayı olarak kalır; varsayılan davranış sadelik, renklendirme istisnadır.
+- **"Durum" kolonu (kategorik istisna):** az sayıda değer taşıyan durum kolonlarında hafif status dolgusu kullanılabilir - Mevcut → green-wash `#C8E6C9`/`#2E7D32`, Düzeltildi → gold `#F5A623`/`#10332F`, Eksik → red-wash `#FFCDD2`/`#D32F2F`, Planlandı → coral-tint `#FFE3D8`/`#E85F36`. Bu, delta sütunlarındaki "her sayıyı renklendirme" yasağının kapsamı dışındadır; kategorik ve anlam taşıyan tek kolona sınırlıdır.
+- **Not/metodoloji/bullet-list sheet'leri:** etiket veya anahtar terim hücreleri kalın coral `#FF7B52`; gövde/açıklama metni ink teal `#10332F`. Etiket hücresinde ince bir coral sol kenarlık, markanın imza aksan çizgisine göndermedir - satır satır değil, yalnızca not/legend satırlarında kullanılır.
+- **Kenarlıklar:** ince çizgi `#E0E0E0`, satır başına yalnızca üst kenarlık; dikey çizgiler zorunlu değildir.
+- **Formül önceliği:** özet/rollup sheet'leri, hesaplanmış sabitler yerine detay sheet'ine referans veren SUMIF/COUNTIF gibi formüllerle kurulur; böylece alttaki veri değiştiğinde workbook yeniden hesaplanır.
+- **Office varsayılan teması kullanılmaz:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı gibi fabrika ayarları marka çıktısına girmez.

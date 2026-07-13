@@ -28,6 +28,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 22. **Coined kelime / ham İngilizce etiket:** grafik-tablo etiketinde "Duallik", "weak topic clusters". → Türkçeleştirilir veya yerleşik terime çevrilir; etiketler gövde metniyle aynı denetime tabidir.
 23. **Keskin analitik betimleme:** "ters profildedir", "açık ara önde", "en zayıf halka". → Nötr formal karşılık ("tersine dönen örüntü", "belirgin biçimde önde", "en az işlenen başlık").
 24. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
+25. **Excel/Doc'ta Office varsayılan teması:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı. → Excel'de `#434343` başlık + Calibri + ink teal gövde; delta sütunları dolgu yok yalnızca yazı rengi (bkz. Bölüm 7.3).
 
 ---
 
@@ -75,6 +76,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] HTML'de teknik terimler .term span'lı mı? Glossary dışına span verilmiş mi?
 - [ ] HTML raporda kart/blok kenarına renkli dekoratif şerit (border-left/top coral vb.) var mı? → Kart ayrımı ince kenarlık veya sade arka plan tonuyla yapılır (bkz. HTML rapor kanal kuralı: parantez/ayraç biçimli süs öğesi yasak).
 - [ ] HTML raporda büyük harfli etiketlerde İngilizce terimler hatalı "İ" ile mi geliyor? (lang=tr + CSS uppercase → VİSİBİLİTY / MENTİON / GEMİNİ). → Etiketler kaynakta doğru büyük harfle yazılır (İngilizce düz I, Türkçe İ).
+- [ ] Excel'de Office varsayılan teması (lacivert başlık, sarı highlight) kullanılmış mı? → Başlık `#434343`, gövde Calibri + ink teal, delta sütunları yalnızca yazı rengi (bkz. Bölüm 7.3).
 - [ ] Başlıklar nötr, anlaşılır, iddiasız mı?
 - [ ] Otomasyon aracı adı veya iç kısıt ifadesi ("ölçülemiyor") sızmış mı? (İç kısıt varsa sunacak kişiye chat'ten iletildi mi?)
 - [ ] Konuşmacı notları, iç durum etiketleri (Blocked vb.) ve "(Shared)" link adları temizlendi mi?
