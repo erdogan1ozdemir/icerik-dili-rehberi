@@ -135,6 +135,7 @@ Not: Gözlemlenen/ölçülmüş etkiler "-mektedir / -maktadır" ile net bildiri
 - Aksiyon planı gün/hafta değil **"Öncelik 1/2/3"** veya **"Faz 1/2/3"** ile verilir.
 - Öncelik dereceleri Türkçe ve sade: Öncelikli / Yüksek / Orta / Takip edilebilir.
 - Proje durum etiketleri şeffaf: "Devam Ediyor / Hazırlık Aşaması / Planlandı".
+- Görsel/renkli çıktılarda (HTML rapor, Excel, kart) öncelik derecesi renkle de desteklenebilir: Öncelikli/Yüksek → gold `#F5A623` bg + teal `#10332F` metin, Orta → coral-tint `#FFE3D8` bg + coral-deep `#E85F36` metin, Takip edilebilir → nötr gri `#F0EDE8` bg + `#4A4A4A` metin. Bkz. `kanal-ozel-kurallar.md` 7.3.
 
 ### 3.2. Sosyal dinleme / algı raporu ek eşlemesi [B]
 

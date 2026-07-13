@@ -196,10 +196,27 @@ Referans: vitraglobal.com Geçiş Sonrası Audit yapısı.
 - Detay sütunundaki açıklamalarda "İlgili bilgi veya element eklenmeliydi" tarzı gereksiz/geriye dönük yorumlar yazılmaz; ya düzgün açıklama verilir ya boş bırakılır.
 - Teknik hijyen: status code'lar tam sayı (404, "404.0" değil), boolean yerine Türkçe etiket, sütun başlıklarında konuşma dili ("açık mı kalacak?") yerine nötr ad ("Açık Kalma Kararı"), benzer içerikli mükerrer sheet açılmaz.
 
-### 7.3. Excel renk ve biçim standardı (Inbound Design System)
+### 7.3. Rapor tablosu renk sistemi (Inbound Design System)
 
-Kaynak: Inbound Design System (`colors_and_type.css` + README). Bu kurallar Excel'e özeldir ve web/deck tablo bileşeninden (teal başlık + dolgulu wash hücre) bilinçli olarak daha sade tutulur: Excel çıktıları bir çalışma aracı gibi okunur, pazarlama yüzeyi gibi değil.
+Kaynak: Inbound Design System (`colors_and_type.css`, `.report-table` / `.status-badge` bileşenleri). Renk/tipografi ana skill kapsamı dışıdır; ancak rapor tablolarının kanal-bazlı renk standardı burada sabitlenir çünkü Excel'in ayrı bir tasarım dosyası yoktur.
 
+- **Office varsayılan teması kullanılmaz.** Excel/Word'ün fabrika ayarı lacivert başlık, sarı koşullu biçimlendirme gibi renkler marka çıktısına girmez.
+- **Kanal ayrımı (önemli):** HTML rapor ve deck tabloları pazarlama yüzeyidir, marka teal başlığını taşır; Excel bir çalışma aracıdır ve bilinçle daha sadedir (ayrı başlık rengi, dolgusuz delta). İkisi karıştırılmaz.
+
+**(a) HTML rapor / deck / Word tabloları:**
+- **Tablo başlık / grup satırı:** Dark Teal `#10332F` dolgu, beyaz metin. Sunumlardaki bölüm ayraç rengiyle aynı token.
+- **"Durum" kolonu için rozet paleti** (yeni hue icat edilmez, mevcut data-viz token'ları semantik olarak yeniden kullanılır):
+
+| Durum | Arka plan | Metin |
+|---|---|---|
+| Mevcut | green-wash `#C8E6C9` | green `#2E7D32` |
+| Düzeltildi | gold `#F5A623` | teal `#10332F` |
+| Eksik | red-wash `#FFCDD2` | red `#D32F2F` |
+| Planlandı | coral-tint `#FFE3D8` | coral-deep `#E85F36` |
+
+(Öncelik derecelerinin renkle desteklenmesi için bkz. `terminoloji-ve-sozluk.md` 3.1.)
+
+**(b) Excel çıktıları (çalışma aracı, daha sade):**
 - **Başlık satırı:** dolgu Shadowed Charcoal `#434343`, yazı beyaz, kalın, yatay + dikey ortalanmış. Bu Excel'e özel, ayrı bir renktir; web/deck'teki teal (`#10332F`) veya coral (`#FF7B52`) Excel başlığına taşınmaz.
 - **Yazı tipi:** Excel'de Bricolage Grotesque/Outfit güvenilir şekilde yüklü olmadığından, sistemin belgelenmiş yedek fontu Calibri kullanılır. Gövde metni rengi ink teal `#10332F`'dir (salt siyah değil).
 - **Dikey hizalama:** dolu her hücre (başlık + gövde) dikeyde ortalanır; asla üste veya alta yapışık bırakılmaz. Etiket/URL sütunları yatayda sola, sayısal/metrik sütunlar ortaya hizalanır.

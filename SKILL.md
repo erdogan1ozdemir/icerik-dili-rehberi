@@ -5,7 +5,7 @@ description: Müşteriye veya markaya giden profesyonel çıktılar (SEO/GEO rap
 
 # İçerik Dili Rehberi - Rapor, Sunum & Doküman Çıktıları
 
-> **Kapsam:** Sadece içerik dili, üslup ve ton kuralları. Renk, tipografi, layout ve teknik bileşen kuralları bu skill'in kapsamı dışındadır (bkz. ilgili tema/tasarım kuralları).
+> **Kapsam:** Ağırlıklı olarak içerik dili, üslup ve ton kuralları. Renk, tipografi ve layout genel olarak bu skill'in kapsamı dışındadır (bkz. ilgili tema/tasarım kuralları); tek istisna, rapor tablolarının kanal-bazlı renk standardıdır (`references/kanal-ozel-kurallar.md` 7.3) - Excel'in ayrı bir tasarım dosyası olmadığı için burada sabitlenir.
 > **Kaynaklar:** Geçmiş projelerdeki tüm dil/stil prompt versiyonları (Özdilek, Turkcell, VitrA, QNB, Eczacıbaşı, GeForce NOW algı raporu, Zorlu, reklam sektörü sunumu) + 14 örnek çıktının (sunumlar + audit Excel) satır satır dil denetimi.
 > **Kullanım akışı:** Her bölüm yazılmadan önce ilgili kurallar hatırlanır → yazıldıktan sonra `references/hatalar-ve-selfcheck.md`'deki self-check çalıştırılır → kural ihlali varsa bölüm yeniden yazılır.
 
