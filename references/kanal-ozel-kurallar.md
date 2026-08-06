@@ -149,7 +149,7 @@ Genel kuralları ezmez; örnekler ve vurgular ekler.
 - Sorunlaştırma korkutmadan yapılır; fırsat maliyeti dili kullanılır.
 
 ### 6.11. Teknik / PageSpeed optimizasyon sunumu (CWV, CLS, LCP vb.)
-- **Katmanlı bulgu anlatımı:** tespit → mekanizma/neden → kullanıcıya etkisi → çözüm. Örnek iskelet: "Bazı web fontlarında font-display ayarı bulunmuyor. Bu nedenle tarayıcı, font inene kadar metinleri gizli tutuyor. Bu durum metinlerin geç görünmesine ve FCP'nin gecikmesine yol açıyor. Tüm fontlara font-display: swap eklenebilir."
+- **Katmanlı bulgu anlatımı** (bu kural PageSpeed'e özel değildir; her teknik bulgu anlatımında geçerlidir, bkz. Bölüm 7.2 sade dil katmanı): tespit → mekanizma/neden → kullanıcıya etkisi → çözüm. Örnek iskelet: "Bazı web fontlarında font-display ayarı bulunmuyor. Bu nedenle tarayıcı, font inene kadar metinleri gizli tutuyor. Bu durum metinlerin geç görünmesine ve FCP'nin gecikmesine yol açıyor. Tüm fontlara font-display: swap eklenebilir."
 - **Kip ayrımı net uygulanır:** ölçülmüş etki bildirme kipiyle ("Bu durum CLS değerini olumsuz yönde etkilemektedir", "17,059 KiB olarak ölçülmüştür"); yalnızca potansiyel/koşullu etkiler "-ebilir" ile ("Aşağıdaki faktörler LCP puanını olumsuz etkileyebilir").
 - Çözüm ayrı etiketle işaretlenir ("Çözüm:"); etkilenen element/CSS class adları verbatim listelenir; uygulanabilir kod örneği slayta gömülebilir (kopyala-yapıştır seviyesinde somutlaştırma).
 - Bakım/raf ömrü uyarısı eklenir: "Önemli Not: Sayfa tasarımının değişeceği bir durumda bu alanlar yeni tasarıma göre güncellenmelidir."
@@ -194,6 +194,13 @@ Referans: vitraglobal.com Geçiş Sonrası Audit yapısı.
 - **Hücre placeholder dili:** eksik/mevcut alanlar parantezli tek kelimeyle: `(mevcut)` / `(boş)`; ikili durum etiketleri Türkçe: `Eşleşiyor / Eşleşmiyor`; veri yoksa `-`.
 - **Karar müşteriye bırakılan koşullu kalıp** kullanılabilir: "Önce sayfaların açık kalıp kalmayacağı incelenmeli. - Kapatılacaksa 301 yönlendirmeleri hazırlanacak. - Açık kalacaklar için aksiyon alınmayacak."
 - Detay sütunundaki açıklamalarda "İlgili bilgi veya element eklenmeliydi" tarzı gereksiz/geriye dönük yorumlar yazılmaz; ya düzgün açıklama verilir ya boş bırakılır.
+- **Sade dil katmanı zorunludur (analiz/denetim Excel'lerinde).** Bulgu tablosu yalnızca teknik ifadeyle bırakılmaz; bulgunun yanında **"Ne anlama geliyor"** sütunu bulunur. Bu sütun terimsiz, günlük Türkçeyle yazılır ve iki şeyi söyler: mekanizma (ne oluyor) + sonuç (bu neden önemli). Teknik kanıt kendi sütununda kalır, sade açıklama onun yerine geçmez.
+  - Teknik sütun: "Sunucudan gelen işaretlemede 51 H2 bulunurken render sonrası 72 H2 oluşmaktadır; 16 soru ikinci kez DOM'a yazılmaktadır."
+  - Sade sütun: "Aynı 16 soru sayfada iki kez basılıyor. Kullanıcı bunu fark etmiyor ama sayfa gereğinden büyüyor ve arama motoru aynı içeriği iki kez okuyor."
+  - Sade sütunda kip serbesttir (geniş zaman kabul edilir); teknik sütunun "-mektedir" register'ı buraya taşınmaz. İki sütun bilinçli olarak farklı register'da yazılır.
+- **Terim Sözlüğü sheet'i.** Dosyada 10'dan fazla teknik terim geçiyorsa ayrı bir "Terim Sözlüğü" sheet'i eklenir: `Alan | Terim | Açıklama`. Terim İngilizce kalır (bkz. terminoloji politikası), açıklama tek cümlelik sade Türkçe olur. Sözlük varsa gövde metninde her terim için parantez içi tekrar açıklama yapılmaz; sözlük yoksa ilk geçişte parantez içi açıklama kuralı geçerlidir.
+  - Örnek satır: `Teknik | Canonical | Aynı içeriğe birden çok adresten ulaşılabildiğinde "asıl adres budur" diyen işaret.`
+- **Teslim öncesi terim taraması:** dosyadaki teknik terimler listelenir; her birinin ya sözlükte ya da ilk geçişinde karşılığı bulunduğu kontrol edilir. Karşılıksız terim kalmaz.
 - Teknik hijyen: status code'lar tam sayı (404, "404.0" değil), boolean yerine Türkçe etiket, sütun başlıklarında konuşma dili ("açık mı kalacak?") yerine nötr ad ("Açık Kalma Kararı"), benzer içerikli mükerrer sheet açılmaz.
 
 ### 7.3. Rapor tablosu renk sistemi (Inbound Design System)

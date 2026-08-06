@@ -27,7 +27,9 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 21. **Konuşma dili başlık:** ifade başlığı "-iyor" ile biter ("Citation'lar hangi kaynaklara gidiyor"). → Soru başlığıysa "?" eklenir (soru başlığı serbest); değilse nominal yapıya çevrilir ("Citation kaynak dağılımı").
 22. **Coined kelime / ham İngilizce etiket:** grafik-tablo etiketinde "Duallik", "weak topic clusters". → Türkçeleştirilir veya yerleşik terime çevrilir; etiketler gövde metniyle aynı denetime tabidir.
 23. **Keskin analitik betimleme:** "ters profildedir", "açık ara önde", "en zayıf halka". → Nötr formal karşılık ("tersine dönen örüntü", "belirgin biçimde önde", "en az işlenen başlık").
-24. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
+24. **Sade dil katmanı atlanmış teknik bulgu:** bulgu yalnızca terimle yazılmış ("Sayfada BreadcrumbList bulunmamaktadır"), okuyucunun terimi bilmesi varsayılmış. → Yanına mekanizma + sonuç cümlesi eklenir; analiz/denetim Excel'lerinde "Ne anlama geliyor" sütunu açılır.
+25. **Karşılıksız terim yığılması:** dosyada onlarca teknik terim geçerken ne sözlük ne de ilk geçiş açıklaması bulunuyor. → Teslim öncesi terim taraması yapılır; 10'dan fazla terim varsa "Terim Sözlüğü" sheet'i eklenir.
+26. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
 25. **Excel/Doc'ta Office varsayılan teması:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı. → Excel'de `#434343` başlık + Calibri + ink teal gövde; delta sütunları dolgu yok yalnızca yazı rengi (bkz. Bölüm 7.3).
 
 ---
@@ -78,6 +80,8 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] HTML raporda büyük harfli etiketlerde İngilizce terimler hatalı "İ" ile mi geliyor? (lang=tr + CSS uppercase → VİSİBİLİTY / MENTİON / GEMİNİ). → Etiketler kaynakta doğru büyük harfle yazılır (İngilizce düz I, Türkçe İ).
 - [ ] Excel'de Office varsayılan teması (lacivert başlık, sarı highlight) kullanılmış mı? → Başlık `#434343`, gövde Calibri + ink teal, delta sütunları yalnızca yazı rengi (bkz. Bölüm 7.3).
 - [ ] Başlıklar nötr, anlaşılır, iddiasız mı?
+- [ ] Teknik bulguların yanında sade dil katmanı var mı? (mekanizma + sonuç; analiz/denetim Excel'inde "Ne anlama geliyor" sütunu)
+- [ ] Terim taraması yapıldı mı? Her teknik terimin ya sözlükte ya ilk geçişinde karşılığı var mı? (10+ terim varsa "Terim Sözlüğü" sheet'i)
 - [ ] Otomasyon aracı adı veya iç kısıt ifadesi ("ölçülemiyor") sızmış mı? (İç kısıt varsa sunacak kişiye chat'ten iletildi mi?)
 - [ ] Konuşmacı notları, iç durum etiketleri (Blocked vb.) ve "(Shared)" link adları temizlendi mi?
 - [ ] Terimler tekilleştirildi mi? (gösterim/Impression karışımı yok)
