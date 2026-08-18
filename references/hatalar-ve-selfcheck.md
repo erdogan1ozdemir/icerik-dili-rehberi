@@ -29,7 +29,8 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 23. **Keskin analitik betimleme:** "ters profildedir", "açık ara önde", "en zayıf halka". → Nötr formal karşılık ("tersine dönen örüntü", "belirgin biçimde önde", "en az işlenen başlık").
 24. **Sade dil katmanı atlanmış teknik bulgu:** bulgu yalnızca terimle yazılmış ("Sayfada BreadcrumbList bulunmamaktadır"), okuyucunun terimi bilmesi varsayılmış. → Yanına mekanizma + sonuç cümlesi eklenir; analiz/denetim Excel'lerinde "Ne anlama geliyor" sütunu açılır.
 25. **Karşılıksız terim yığılması:** dosyada onlarca teknik terim geçerken ne sözlük ne de ilk geçiş açıklaması bulunuyor. → Teslim öncesi terim taraması yapılır; 10'dan fazla terim varsa "Terim Sözlüğü" sheet'i eklenir.
-26. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
+26. **Sektör teriminin gereksiz Türkçeleştirilmesi:** araç veya ölçüm jargonu temizlenirken yerleşik İngilizce terimlerin de çevrilmesi ("breadcrumb" yerine "yol izi", "markup" yerine "işaretleme"). → [A] rejiminde terim İngilizce kalır, sözlükte veya ilk geçişinde açıklanır. Çıkarılacak olan yalnızca gerçek ölçüm jargonudur ("token", "head terim").
+27. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
 25. **Excel/Doc'ta Office varsayılan teması:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı. → Excel'de `#434343` başlık + Calibri + ink teal gövde; delta sütunları dolgu yok yalnızca yazı rengi (bkz. Bölüm 7.3).
 
 ---
@@ -81,6 +82,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] Excel'de Office varsayılan teması (lacivert başlık, sarı highlight) kullanılmış mı? → Başlık `#434343`, gövde Calibri + ink teal, delta sütunları yalnızca yazı rengi (bkz. Bölüm 7.3).
 - [ ] Başlıklar nötr, anlaşılır, iddiasız mı?
 - [ ] Teknik bulguların yanında sade dil katmanı var mı? (mekanizma + sonuç; analiz/denetim Excel'inde "Ne anlama geliyor" sütunu)
+- [ ] Sektör terimi gereksiz Türkçeleştirilmiş mi? (breadcrumb, markup, canonical, passage gibi terimler İngilizce kalmalı)
 - [ ] Terim taraması yapıldı mı? Her teknik terimin ya sözlükte ya ilk geçişinde karşılığı var mı? (10+ terim varsa "Terim Sözlüğü" sheet'i)
 - [ ] Otomasyon aracı adı veya iç kısıt ifadesi ("ölçülemiyor") sızmış mı? (İç kısıt varsa sunacak kişiye chat'ten iletildi mi?)
 - [ ] Konuşmacı notları, iç durum etiketleri (Blocked vb.) ve "(Shared)" link adları temizlendi mi?

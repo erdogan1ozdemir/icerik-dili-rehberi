@@ -24,7 +24,11 @@ Sektörde İngilizce kullanılan terim çevrilmez. Türkçe ek alarak çekimlene
 | market kümesi | **Market Cluster** |
 | ss. | **session** |
 | pik | **peak** |
+| yol izi | **breadcrumb** (adım için "breadcrumb adımı") |
+| işaretleme | **markup** |
 | Paid talep artışı | **Paid yatırım artışı** |
+
+> **Not:** Bu tablo yalnızca [A] kurumsal rejim içindir. [B] sosyal dinleme rejiminde aynı terimler Türkçeye çevrilir (bkz. Bölüm 1.2); iki tablo çelişmez, farklı rejimlere aittir. Araç veya ölçüm jargonunu temizlerken sektör terimlerinin de çevrilmesi sık düşülen bir hatadır: terim İngilizce kalır, açıklaması sade Türkçe olur.
 
 - Tablo başlıkları ve metrik adları İngilizce kalır; tek tabloda TR/EN karışımı yapılmaz (yorum kolonu Türkçe olabilir).
 - Yeni/az bilinen metrikler (SoV, citation, mention, zero-click, agentic commerce) metnin/sunumun başında bir kez sade dille açıklanır; sunumda slayt altı not olarak eklenebilir.
