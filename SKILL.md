@@ -57,6 +57,7 @@ Aynı standart, işin türüne göre iki rejimde uygulanır. Bölüm yazmadan ö
 11. **Boş / dolgu cümle yok.** Hiçbir bilgi taşımayan klişe kullanılmaz: "Rakamlar bağlamda değerlendirildiğinde dikkat çekmektedir" gibi cümleler yazılmaz. Her cümle somut bilgi taşır. Devrik / "düşük" cümle yok; yüklem sonda, tam kurulu cümle.
 
 12. **Meta yorum yok.** Sunum kendini/sürecini anlatmaz: "Analizi yeniden çerçeveledik", "Bu bulgu bize gösterdi ki" yazılmaz; doğrudan olgu verilir.
+  - Rapor kendi yapısını tarif etmez: "Markanın ilettiği altı başlığın her birine ayrı bölümde yanıt verilmektedir", "Her başlığın ayrıntısı ilgili bölümde ele alınmaktadır", "Bu raporda önce X sonra Y incelenmiştir" gibi cümleler yazılmaz. Yanıt zaten veriliyorsa verildiğini ayrıca duyurmaya gerek yoktur; bölüm başlıkları ve içindekiler bu işi görür.
 
 13. **Uydurma / spekülasyon yok.** Bilgi yoksa boş bırakılır veya "-" yazılır; "eklenebilir/gelecek" gibi spekülasyon yapılmaz. Her önemli sayı bir kaynağa bağlanır. Varsayım rakamı verilmez; gerçek veri yoksa metrik çıkarılır. (Veri eksikliği politikasının tamamı: `references/kanal-ozel-kurallar.md` Bölüm 10.)
 

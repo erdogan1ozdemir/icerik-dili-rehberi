@@ -52,6 +52,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] Olumsuz/keskin kelime var mı? ("kötü, hata, sorun, ciddi, berbat, yanlış, başarısız, zayıf")
 - [ ] Pazarlama jargonu / abartı var mı? ("patlama, büyüme motoru, dramatik, kat kat")
 - [ ] Çiğ/afili kelime var mı? ("doğrulanmış fırsat, çekirdek, kanıt, mercek, panorama")
+- [ ] Rapor kendi yapısını anlatan meta cümle var mı? ("altı başlığın her birine ayrı bölümde yanıt verilmektedir", "ilgili bölümde ele alınmaktadır")
 - [ ] Meta ifade var mı? ("yeniden çerçeveledik, analiz gösterdi ki")
 - [ ] Boş/dolgu veya devrik cümle var mı?
 - [ ] Gözlem gereksiz yumuşatılmış mı? (ölçülmüş etki "-mektedir/-maktadır" ile net mi; çifte yumuşatma var mı?)
