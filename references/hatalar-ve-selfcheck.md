@@ -80,6 +80,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] HTML raporda kart/blok kenarına renkli dekoratif şerit (border-left/top coral vb.) var mı? → Kart ayrımı ince kenarlık veya sade arka plan tonuyla yapılır (bkz. HTML rapor kanal kuralı: parantez/ayraç biçimli süs öğesi yasak).
 - [ ] HTML raporda büyük harfli etiketlerde İngilizce terimler hatalı "İ" ile mi geliyor? (lang=tr + CSS uppercase → VİSİBİLİTY / MENTİON / GEMİNİ). → Etiketler kaynakta doğru büyük harfle yazılır (İngilizce düz I, Türkçe İ).
 - [ ] Excel'de Office varsayılan teması (lacivert başlık, sarı highlight) kullanılmış mı? → Başlık `#434343`, gövde Calibri + ink teal, delta sütunları yalnızca yazı rengi (bkz. Bölüm 7.3).
+- [ ] HTML raporun başında **marka logosu ve Inbound logosu birlikte** var mı? İkisi de `data:` URI olarak gömülü mü (dış adresten çekilen logo yok)?
 - [ ] Başlıklar nötr, anlaşılır, iddiasız mı?
 - [ ] Teknik bulguların yanında sade dil katmanı var mı? (mekanizma + sonuç; analiz/denetim Excel'inde "Ne anlama geliyor" sütunu)
 - [ ] Sektör terimi gereksiz Türkçeleştirilmiş mi? (breadcrumb, markup, canonical, passage gibi terimler İngilizce kalmalı)

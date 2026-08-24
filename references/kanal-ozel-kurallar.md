@@ -176,6 +176,8 @@ Genel kuralları ezmez; örnekler ve vurgular ekler.
 - "Hangi sorgu → hangi URL" tabloları tıklanabilir verilir; SERP sıraları doğrulanmadan yazılmaz.
 - Excel / HTML yazı tipi: Arial veya Calibri.
 - **Parantez tipi dekoratif belirteç kullanılmaz:** kart/blok kenarına CSS ile yerleştirilen büyük "(" / ayraç biçimli süs öğeleri (kenar boyunca kıvrımlı parantez şeridi vb.) HTML raporlarda kullanılmaz. Kart ayrımı sade arka plan tonu veya ince kenarlıkla yapılır.
+- **Logo bandı zorunludur · proje ve marka fark etmeksizin.** Her HTML raporun en üstünde, içerik başlamadan önce çalışılan markanın logosu ve Inbound logosu birlikte yer alır: marka logosu solda (raporun ilgilendirdiği marka), Inbound logosu sağda (hazırlayan), "Marka" ve "Hazırlayan" etiketleriyle ayrılabilir. Sticky üst bar varsa bant hem üst barda hem kapak bloğunda tekrarlanır. Bu bant kapak süsü değil kimlik satırıdır; "Hazırlayan / Prepared by" metin bloğu yine yazılmaz.
+- **Marka ve ajans logosu da `data:` URI olarak gömülür**, dış adresten çekilmez: içerik güvenlik politikası dış kaynak isteğini engelleyebilir ve rapor tek dosya olarak taşınabilir kalmalıdır. Marka logosu markanın kendi sitesindeki resmi asset'inden alınır, `alt` metni marka adını taşır, yükseklik 22-40 px bandında tutulur. Koyu zeminde marka logosu beyaz kart üzerine alınır, Inbound wordmark'ı `filter: brightness(0) invert(1)` ile beyaza çevrilir.
 - Sunumlarda (PPTX) span kullanılmaz; teknik terim düz İngilizce kalır.
 
 ### 7.2. Excel audit / denetim çıktısı dili
