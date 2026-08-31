@@ -30,8 +30,9 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 24. **Sade dil katmanı atlanmış teknik bulgu:** bulgu yalnızca terimle yazılmış ("Sayfada BreadcrumbList bulunmamaktadır"), okuyucunun terimi bilmesi varsayılmış. → Yanına mekanizma + sonuç cümlesi eklenir; analiz/denetim Excel'lerinde "Ne anlama geliyor" sütunu açılır.
 25. **Karşılıksız terim yığılması:** dosyada onlarca teknik terim geçerken ne sözlük ne de ilk geçiş açıklaması bulunuyor. → Teslim öncesi terim taraması yapılır; 10'dan fazla terim varsa "Terim Sözlüğü" sheet'i eklenir.
 26. **Sektör teriminin gereksiz Türkçeleştirilmesi:** araç veya ölçüm jargonu temizlenirken yerleşik İngilizce terimlerin de çevrilmesi ("breadcrumb" yerine "yol izi", "markup" yerine "işaretleme"). → [A] rejiminde terim İngilizce kalır, sözlükte veya ilk geçişinde açıklanır. Çıkarılacak olan yalnızca gerçek ölçüm jargonudur ("token", "head terim").
-27. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
-25. **Excel/Doc'ta Office varsayılan teması:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı. → Excel'de `#434343` başlık + Calibri + ink teal gövde; delta sütunları dolgu yok yalnızca yazı rengi (bkz. Bölüm 7.3).
+27. **Metaforik kategori adı:** denetim çıktısında "İçerik hijyeni", "kod hijyeni", "sağlık skoru" gibi tıp/gıda çağrışımlı bölüm adları. → İşi tarif eden nötr karşılık ("İçerik temizliği", "Teknik tutarlılık", "Genel durum").
+28. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
+29. **Excel/Doc'ta Office varsayılan teması:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı. → Excel'de `#434343` başlık + Calibri + ink teal gövde; delta sütunları dolgu yok yalnızca yazı rengi (bkz. Bölüm 7.3).
 
 ---
 
@@ -86,6 +87,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] Teknik bulguların yanında sade dil katmanı var mı? (mekanizma + sonuç; analiz/denetim Excel'inde "Ne anlama geliyor" sütunu)
 - [ ] Sektör terimi gereksiz Türkçeleştirilmiş mi? (breadcrumb, markup, canonical, passage gibi terimler İngilizce kalmalı)
 - [ ] Terim taraması yapıldı mı? Her teknik terimin ya sözlükte ya ilk geçişinde karşılığı var mı? (10+ terim varsa "Terim Sözlüğü" sheet'i)
+- [ ] Kategori ve bölüm adları metaforik mi? ("İçerik hijyeni", "kod hijyeni", "sağlık skoru") → İşi doğrudan tarif eden nötr karşılık kullanılır (bkz. `terminoloji-ve-sozluk.md` 2.7).
 - [ ] Otomasyon aracı adı veya iç kısıt ifadesi ("ölçülemiyor") sızmış mı? (İç kısıt varsa sunacak kişiye chat'ten iletildi mi?)
 - [ ] Konuşmacı notları, iç durum etiketleri (Blocked vb.) ve "(Shared)" link adları temizlendi mi?
 - [ ] Terimler tekilleştirildi mi? (gösterim/Impression karışımı yok)

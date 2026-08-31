@@ -203,7 +203,7 @@ Referans: vitraglobal.com Geçiş Sonrası Audit yapısı.
 - **Terim Sözlüğü sheet'i.** Dosyada 10'dan fazla teknik terim geçiyorsa ayrı bir "Terim Sözlüğü" sheet'i eklenir: `Alan | Terim | Açıklama`. Terim İngilizce kalır (bkz. terminoloji politikası), açıklama tek cümlelik sade Türkçe olur. Sözlük varsa gövde metninde her terim için parantez içi tekrar açıklama yapılmaz; sözlük yoksa ilk geçişte parantez içi açıklama kuralı geçerlidir.
   - Örnek satır: `Teknik | Canonical | Aynı içeriğe birden çok adresten ulaşılabildiğinde "asıl adres budur" diyen işaret.`
 - **Teslim öncesi terim taraması:** dosyadaki teknik terimler listelenir; her birinin ya sözlükte ya da ilk geçişinde karşılığı bulunduğu kontrol edilir. Karşılıksız terim kalmaz.
-- Teknik hijyen: status code'lar tam sayı (404, "404.0" değil), boolean yerine Türkçe etiket, sütun başlıklarında konuşma dili ("açık mı kalacak?") yerine nötr ad ("Açık Kalma Kararı"), benzer içerikli mükerrer sheet açılmaz.
+- Teknik tutarlılık: status code'lar tam sayı (404, "404.0" değil), boolean yerine Türkçe etiket, sütun başlıklarında konuşma dili ("açık mı kalacak?") yerine nötr ad ("Açık Kalma Kararı"), benzer içerikli mükerrer sheet açılmaz.
 
 ### 7.3. Rapor tablosu renk sistemi (Inbound Design System)
 

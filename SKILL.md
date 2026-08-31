@@ -73,7 +73,7 @@ Aynı standart, işin türüne göre iki rejimde uygulanır. Bölüm yazmadan ö
 
 Bu dosya yalnızca değişmez temel kuralları içerir. Aşağıdaki referans dosyalarını, ilgili bölümü yazmadan hemen önce oku:
 
-- **`references/terminoloji-ve-sozluk.md`** - İngilizce/Türkçe terim politikası, terim tanıtma yöntemi, yasak→tercih edilen ifade sözlüğü, rozet/etiket eşlemeleri.
+- **`references/terminoloji-ve-sozluk.md`** - İngilizce/Türkçe terim politikası, terim tanıtma yöntemi, yasak→tercih edilen ifade sözlüğü, kategori ve bölüm adları, rozet/etiket eşlemeleri.
 - **`references/insight-rakam-format.md`** - Insight yazım formatı (➔ iskeleti, renk vurgulama), rakam/tarih/kaynak standardı, öneri dili (advisory tone) hiyerarşisi.
 - **`references/kanal-ozel-kurallar.md`** - Marka-güvenli çıktı kuralları, sunum yapısı ve akış ritüelleri, sunum/doküman türüne göre ton ayarları (çeyreklik rapor, migrasyon, GEO, pitch, PageSpeed, statü sunumu vb.), HTML rapor & Excel audit kanal kuralları, negatif bulgu çerçevelemesi, rakip dili, veri eksik/ölçüm kısıtı politikası.
 - **`references/hatalar-ve-selfcheck.md`** - Sık düşülen hatalar listesi (geçmiş denetimlerden) ve her çıktı sonrası çalıştırılacak self-check.

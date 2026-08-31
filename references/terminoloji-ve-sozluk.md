@@ -130,6 +130,20 @@ Not: Gözlemlenen/ölçülmüş etkiler "-mektedir / -maktadır" ile net bildiri
 - Grafik/tablo etiketleri, eksen adları, cluster & segment adları da gövde metniyle aynı dil denetimine tabidir; "küçük etiket" diye atlanmaz.
 - Sabit sektör terimi olmayan ham İngilizce ifadeler Türkçeleştirilir: "weak topic clusters" → "düşük görünürlüklü cluster'lar". Yalnızca yerleşik terimler (SOV, CTR, citation, mention, cluster) İngilizce kalır.
 
+### 2.7. Kategori ve bölüm adları
+
+Denetim çıktılarında kullanılan kategori/bölüm adları da sözlüğe tabidir. Tıp ve gıda çağrışımı taşıyan ya da metaforik kategori adları yerine, işi doğrudan tarif eden nötr karşılık kullanılır.
+
+| Kaçınılacak | Tercih edilen |
+|---|---|
+| İçerik hijyeni | **İçerik temizliği** |
+| Kod hijyeni | **Kod temizliği** |
+| Veri hijyeni | **Veri temizliği** |
+| Teknik hijyen | **Teknik tutarlılık** |
+| Sağlık skoru (rapor bölümü adı olarak) | **Genel durum / Skor** |
+
+Not: "hijyen" kelimesi ölçüm aracından geldiği durumlarda (araç ekranındaki alan adı) verbatim korunabilir; kendi yazdığımız kategori adı olarak kullanılmaz.
+
 ---
 
 ## 3. Rozet / Etiket Eşlemeleri
