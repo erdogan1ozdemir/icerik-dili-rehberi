@@ -91,7 +91,28 @@ Karmaşık kavramlar somut senaryoyla açılır: "Agentic commerce nedir? Kullan
 | ters profil, ters profildedir | tersine dönen örüntü / tam tersi profil |
 | yapmıyor, eksik | henüz değerlendirilmemiş / katalogda henüz yer almıyor |
 
-### 2.3. Pazarlama jargonu / abartı
+### 2.3. Çiğ betimleme: "çıplak"
+
+Bir kelimenin, aramanın ya da verinin niteleyicisiz hâli için **"çıplak" kullanılmaz**; karşılığı
+**"jenerik"**tir. Sözcük profesyonel çıktıda çiğ durur ve teknik bir ayrımı adlandırmak yerine
+betimleme yapar.
+
+| Kaçınılacak | Tercih edilen |
+|---|---|
+| çıplak marka araması | jenerik marka araması |
+| çıplak kelime, çıplak sorgu | jenerik kelime, jenerik arama |
+| çıplak genel ad | jenerik ad |
+| çıplak kısaltma | yalın kısaltma |
+| çıplak sayı (bağlamsız değer) | bağlamsız sayı |
+| çıplak URL, çıplak liste | biçimlendirilmemiş adres, açıklamasız liste |
+
+Karşılık anlama göre seçilir: "yalnız marka adının aratılması" (`gemini`, `apple arcade`) **jenerik
+marka araması**, "niteleyici taşımayan tek kelime" (`konum`, `ram`) **jenerik ad**, tek başına
+kullanılan kısaltma (`puk`, `type`) **yalın kısaltma**, bağlamsız verilen değer **bağlamsız sayı**dır.
+Jenerik yerleşik kalıptır ve çoğu durumda uygundur; kalıba oturmayan yerde yalın tercih edilir. Aynı gerekçeyle
+"kuru veri", "ham başlık" gibi betimlemeler de kullanılmaz; ne kastediliyorsa o adlandırılır.
+
+### 2.4. Pazarlama jargonu / abartı
 
 | Kaçınılacak | Tercih edilen |
 |---|---|
@@ -105,7 +126,7 @@ Karmaşık kavramlar somut senaryoyla açılır: "Agentic commerce nedir? Kullan
 | cannibalization | fırsat kaybı |
 | maksimum verimlilik, hayat veriyor | somut, ölçülü karşılık |
 
-### 2.4. Teknik bulgu kalıpları (kelime düzeyi)
+### 2.5. Teknik bulgu kalıpları (kelime düzeyi)
 
 | Kullanma | Kullan |
 |---|---|

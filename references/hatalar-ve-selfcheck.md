@@ -52,6 +52,7 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] Kesin vaat var mı? ("garanti, mutlaka, kesin, %X olacak")
 - [ ] Olumsuz/keskin kelime var mı? ("kötü, hata, sorun, ciddi, berbat, yanlış, başarısız, zayıf")
 - [ ] Pazarlama jargonu / abartı var mı? ("patlama, büyüme motoru, dramatik, kat kat")
+- [ ] "çıplak" geçiyor mu? → anlamına göre jenerik (marka araması, ad), yalın (kısaltma) ya da bağlamsız sayı
 - [ ] Çiğ/afili kelime var mı? ("doğrulanmış fırsat, çekirdek, kanıt, mercek, panorama")
 - [ ] Rapor kendi yapısını anlatan meta cümle var mı? ("altı başlığın her birine ayrı bölümde yanıt verilmektedir", "ilgili bölümde ele alınmaktadır")
 - [ ] Meta ifade var mı? ("yeniden çerçeveledik, analiz gösterdi ki")
