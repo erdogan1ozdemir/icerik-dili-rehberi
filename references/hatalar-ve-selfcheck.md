@@ -33,6 +33,9 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 27. **Metaforik kategori adı:** denetim çıktısında "İçerik hijyeni", "kod hijyeni", "sağlık skoru" gibi tıp/gıda çağrışımlı bölüm adları. → İşi tarif eden nötr karşılık ("İçerik temizliği", "Teknik tutarlılık", "Genel durum").
 28. **"garanti" negatif/deyim kullanımı:** "mention garantisi vermemekte". → "beraberinde getirmemekte"; "garanti" olumsuz kalıpta bile kaçınılır.
 29. **Excel/Doc'ta Office varsayılan teması:** lacivert başlık satırı, sarı koşullu biçimlendirme highlight'ı. → Excel'de `#434343` başlık + Calibri + ink teal gövde; delta sütunları dolgu yok yalnızca yazı rengi (bkz. Bölüm 7.3).
+30. **Çalışmayan içindekiler (ToC):** HTML raporda ToC bağlantısı tıklandığında ilgili bölüme gitmiyor, aktif bölüm vurgusu kaydırmayla güncellenmiyor ya da vurgu bir bölüm kayıyor. Kök nedenler: yalnızca varsayılan capa davranışına güvenilmesi (statik önizleme ve sandbox'lı bağlamlarda hash gezinmesi engellenir), scroll-spy'da `getBoundingClientRect()` yerine `offsetTop` kullanılması, sticky appbar yüksekliğinin hesaba katılmaması. → Açık tıklama işleyicisi + `getBoundingClientRect()` tabanlı scroll-spy + `:target` CSS yedeği (bkz. `kanal-ozel-kurallar.md` 7.1).
+31. **ToC bağlantılarının altı çizili:** kabuk CSS'indeki genel `a:hover{text-decoration:underline}` kuralı gezinme listesine sızar. → `.sidenav a, .toc-sheet__panel a{text-decoration:none}` (hover ve focus dahil); klavye erişimi `:focus-visible` outline'ı ile verilir.
+32. **Logo bandının iki kez basılması:** sticky üst barda ve hero/kapak bloğunda aynı "Marka | Hazırlayan" bandının tekrarlanması; ekranda üst üste iki kimlik satırı görünür. → Bant raporda bir kez bulunur; sticky bar varsa bant üst bardadır.
 
 ---
 
@@ -83,7 +86,9 @@ Geçmiş çıktılarda fiilen tespit edilen hata sınıfları; teslim öncesi ö
 - [ ] HTML raporda kart/blok kenarına renkli dekoratif şerit (border-left/top coral vb.) var mı? → Kart ayrımı ince kenarlık veya sade arka plan tonuyla yapılır (bkz. HTML rapor kanal kuralı: parantez/ayraç biçimli süs öğesi yasak).
 - [ ] HTML raporda büyük harfli etiketlerde İngilizce terimler hatalı "İ" ile mi geliyor? (lang=tr + CSS uppercase → VİSİBİLİTY / MENTİON / GEMİNİ). → Etiketler kaynakta doğru büyük harfle yazılır (İngilizce düz I, Türkçe İ).
 - [ ] Excel'de Office varsayılan teması (lacivert başlık, sarı highlight) kullanılmış mı? → Başlık `#434343`, gövde Calibri + ink teal, delta sütunları yalnızca yazı rengi (bkz. Bölüm 7.3).
-- [ ] HTML raporun başında **marka logosu ve Inbound logosu birlikte** var mı? İkisi de `data:` URI olarak gömülü mü (dış adresten çekilen logo yok)?
+- [ ] HTML raporun başında **marka logosu ve Inbound logosu birlikte** var mı? İkisi de `data:` URI olarak gömülü mü (dış adresten çekilen logo yok)? Bant **yalnızca bir kez** mi basılmış (sticky bar + hero'da tekrar yok)?
+- [ ] **HTML raporda ToC fiilen test edildi mi?** (a) Bağlantıya tıklayınca ilgili bölüme gidiyor ve başlık sticky barın altında kalıyor mu? (b) Kaydırırken aktif bölüm vurgusu doğru bölümü mü işaretliyor (bir bölüm kaymıyor mu)? (c) JavaScript çalışmadığında `:target` yedeği aktif durumu koruyor mu? (d) Mobil ToC panelinde de aynı davranış var mı?
+- [ ] **ToC bağlantılarının altı çizili mi?** → `.sidenav a, .toc-sheet__panel a{text-decoration:none}` (hover/focus dahil), erişilebilirlik `:focus-visible` ile.
 - [ ] Başlıklar nötr, anlaşılır, iddiasız mı?
 - [ ] Teknik bulguların yanında sade dil katmanı var mı? (mekanizma + sonuç; analiz/denetim Excel'inde "Ne anlama geliyor" sütunu)
 - [ ] Sektör terimi gereksiz Türkçeleştirilmiş mi? (breadcrumb, markup, canonical, passage gibi terimler İngilizce kalmalı)
