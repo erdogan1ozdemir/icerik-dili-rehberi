@@ -12,6 +12,8 @@ Sektörde İngilizce kullanılan terim çevrilmez. Türkçe ek alarak çekimlene
 - SEO/GEO: `Query, Keyword, Citation, Mention, Brand / Non-Brand, Intent, Long-tail, Featured Snippet, PAA, AI Overview, AI Mode, Zero-click, Fan-out Query, Knowledge Panel, Content Gap, Crawl Budget, Internal Linking, Backlink, Anchor Text, Above the Fold, Market Cluster`
 - Teknik: `E-E-A-T, Schema markup / JSON-LD, SSR, SERP, KD, DR, LCP, CLS, INP, CWV, GSC, GA4, H1, Canonical, Indexability, llms.txt, robots.txt, sitemap.xml, machine-readable, Breadcrumb, FAQPage Schema, GMB`
 
+- **VitrA marka adı her zaman büyük A ile yazılır: `VitrA`.** "Vitra", "VITRA" ya da "vitra" biçimleri gövde metninde, başlıkta, tablo hücresinde, grafik etiketinde ve dosya adında kullanılmaz. İki istisna vardır ve ikisi de marka adı değildir: (a) arama kelimeleri kullanıcının yazdığı gibi kalır ("vitra dusch wc", "vitra klozet"), (b) alan adları kendi yazımını korur (vitra-bad.de, vitra.com.tr). Teslim öncesi `Vitra`, `VITRA` ve gövde metnindeki `vitra` geçişleri taranır; kelime ve alan adı bağlamı dışındaki her geçiş düzeltilir.
+
 **Zorunlu karşılıklar (Türkçesi kullanılmaz):**
 
 | Kullanma | Kullan |
@@ -26,6 +28,9 @@ Sektörde İngilizce kullanılan terim çevrilmez. Türkçe ek alarak çekimlene
 | pik | **peak** |
 | yol izi | **breadcrumb** (adım için "breadcrumb adımı") |
 | işaretleme | **markup** |
+| kabuk / uygulama kabuğu / shell | **template** ("aynı template'deki sayfalar", "template düzeyinde düzeltme") |
+| etiket (ölçümleme bağlamında) | **tag** ("Google tag", "tag yönetimi") |
+| etiket yığını | **tag stack** |
 | Paid talep artışı | **Paid yatırım artışı** |
 
 > **Not:** Bu tablo yalnızca [A] kurumsal rejim içindir. [B] sosyal dinleme rejiminde aynı terimler Türkçeye çevrilir (bkz. Bölüm 1.2); iki tablo çelişmez, farklı rejimlere aittir. Araç veya ölçüm jargonunu temizlerken sektör terimlerinin de çevrilmesi sık düşülen bir hatadır: terim İngilizce kalır, açıklaması sade Türkçe olur.

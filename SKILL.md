@@ -47,6 +47,7 @@ Aynı standart, işin türüne göre iki rejimde uygulanır. Bölüm yazmadan ö
 6. **Nicel ifadeler bağlamlı ve yumuşak.** Çıplak sayı bırakılmaz: "DR 18" değil "DR 18 (rakip ortalaması ~34 civarı)". Exact sayılar yuvarlanabilir: 434 → "400+", "1.2K / 1.3M". Gözlem net yazılır, hedging yalnızca öneri/tahmin katmanına uygulanır (detaylar: `references/insight-rakam-format.md`).
 
 7. **Türkçe karakterler zorunlu.** ç ğ ı İ ö ş ü Ç Ğ Ö Ş Ü - ASCII'ye dönüştürme yok, mojibake (Ã, Ä±, Â·) yok. Marka/ürün adları doğru: "iPhone", "İstanbul". Yaygın imla tuzakları: "doküman" (dökümantasyon değil), "halihazırda", "korele".
+   **Şapkalı a (â) kullanılmaz:** "hâlinde" değil **halinde**, "hâle" değil **hale**, "imkân" değil **imkan**. Bu yasak yalnızca bu rehberin kapsadığı markaya giden çıktılar (rapor, sunum, HTML rapor, Excel audit, Word/PDF doküman) içindir. Blog ve tüketiciye dönük içerikte geçerli değildir; orada TDK yazımı esas alınır (bkz. `turkcell-blog-revize` skill'i, `references/yazim-dili.md`).
 
 8. **Em dash (—) kesinlikle yasak.** Yerine kısa tire "-" veya "&". Etiket/footer ayracı olarak "·" kullanılabilir. Teslim öncesi `grep "—"` = 0 olmalı. Not: " - " (boşluklu tire) em dash işlevinde cümle bölmek için de aşırıya kaçırılmaz; mümkünse iki nokta, virgül veya parantez tercih edilir.
 
